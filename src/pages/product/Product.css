@@ -1,0 +1,125 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    gap: 50px;
+    padding: 60px 0;
+}
+
+
+.leftpro {
+    display: flex;
+    gap: 20px;
+}
+
+.smallings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.mainimg img {
+    width: 450px;
+    height: 500px;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 4px;
+  
+}
+
+
+.rightpro {
+    flex: 1;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.stars i {
+    color: #FFAD33;
+}
+
+.stars span {
+    color: #00FF66;
+    margin-left: 10px;
+}
+
+.rightpro h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.color button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+   background-color: blue;
+}
+
+
+.count1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.count1 button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #00000080;
+    background: white;
+}
+
+.count1 .buy {
+    background: #DB4444;
+    color: white;
+    border: none;
+    padding: 11px 40px;
+    border-radius: 4px;
+}
+
+.count2 {
+    margin-top: 40px;
+    border: 1px solid #00000080;
+    border-radius: 4px;
+    width: 400px;
+}
+
+.counts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.counts:first-child {
+    border-bottom: 1px solid #00000080;
+}
+
+.fr h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.fr p {
+    font-size: 12px;
+    margin-top: 5px;
+}

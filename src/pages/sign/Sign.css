@@ -1,0 +1,62 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sign {
+    display: flex;
+    gap: 60px;
+    padding: 60px 0px;
+}
+
+.rights {
+    width: 660px;
+}
+
+.rights img {
+    width: 100%;
+}
+
+.lefts {
+    padding-top: 150px;
+}
+
+.lefts h1 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 4%;
+
+}
+
+.lefts p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 10px 0px;
+
+}
+.btnws{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn1{
+    padding: 13px 30px;
+    color: white;
+    background-color: #DB4444;
+    border: none;
+}
+.btnws2{
+    padding: 13px 30px;
+    border: none;
+    color: black;
+    background-color: white;
+    border: solid 1px #999999;
+}
+.btnws2 i{
+    color: #4285F4;
+}

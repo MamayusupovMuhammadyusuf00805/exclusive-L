@@ -1,0 +1,199 @@
+.checkout {
+    padding: 40px 0 140px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.path {
+    margin-bottom: 80px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
+.path span {
+    color: black;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    letter-spacing: 1px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+
+.leftp {
+    flex: 1;
+    max-width: 470px;
+}
+
+.leftp .items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.leftp label {
+    margin-bottom: 8px;
+    color: rgba(0,0,0,0.4);
+    font-size: 16px;
+}
+
+.leftp label span {
+    color: #DB4444;
+}
+
+.leftp input {
+    background: #F5F5F5;
+    border: 1px solid transparent;
+    padding: 13px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.leftp input:focus {
+    background: #fff;
+    border-color: #DB4444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.check input {
+    width: 24px;
+    height: 24px;
+    accent-color: #DB4444;
+    cursor: pointer;
+}
+
+
+.right {
+    width: 527px;
+}
+
+.products {
+    margin-bottom: 32px;
+}
+
+.lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.right .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.total {
+    margin-bottom: 32px;
+}
+
+.total .line {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.total hr {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.total .bold {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pay {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pay-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank-imgs {
+    width: 190px !important;
+    height: auto !important;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.radio input {
+    width: 24px;
+    height: 24px;
+    accent-color: black;
+}
+
+
+.coupon {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.coupon input {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 16px 24px;
+    outline: none;
+}
+
+.red-btn {
+    background: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 48px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.red-btn:hover {
+    background: #E06767;
+}
+
+.order {
+    width: 190px;
+}
