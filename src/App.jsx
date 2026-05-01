@@ -17,24 +17,24 @@ import { productdetail } from "./services/App";
 export const Datacontext = createContext();
 
 function App() {
-  const [categorydata, setcategorydata] = useState([]);
-  const [productdata,setproductdata]=useState([])
-  const [productdetail, setproductdetail] = useState(null);
-  useEffect(() => {
-    categorydata()?.then((info) => {
-      setcategorydata(info);
-    });
-    fetchproductdata()?.then((product) => {
-      setproductdata(product);
-    });
-    fetchproductdetail()?.then((productid)=>{
-        setproductdetail(productid)
-    });
-  }, []);
+//   const [categorydata, setcategorydata] = useState([]);
+//   const [productdata,setproductdata]=useState([])
+//   const [productdetail, setproductdetail] = useState(null);
+//   useEffect(() => {
+//     categorydata()?.then((info) => {
+//       setcategorydata(info);
+//     });
+//     fetchproductdata()?.then((product) => {
+//       setproductdata(product);
+//     });
+//     fetchproductdetail()?.then((productid)=>{
+//         setproductdetail(productid)
+//     });
+//   }, []);
   return (
     <>
       <BrowserRouter>
-        <Datacontext.Provider value={{categorydata,productdata,productdetail}}>
+        <Datacontext.Provider value={{}}>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
