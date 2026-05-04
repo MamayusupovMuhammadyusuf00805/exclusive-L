@@ -6,7 +6,14 @@ function Contact() {
     <div className="contact-page">
       <div className="main-container">
         <nav className="breadcrumbs">
-          Home / <span>Contact</span>
+          <a
+            href="/"
+            style={{ textDecoration: "none", color: "inherit", opacity: "0.7" }}
+          >
+            Home
+          </a>
+          &nbsp;/&nbsp;
+          <span>Contact</span>
         </nav>
         <div className="content-wrap">
           <aside className="contact-info-card">

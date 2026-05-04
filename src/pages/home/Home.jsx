@@ -12,11 +12,11 @@ import { Datacontext } from "../../App";
 import Log from "../log/Log";
 
 function Home() {
-    const {categorydata}=useContext(Datacontext)
-    console.log(categorydata);
-    
-    const {productdata}=useContext(Datacontext)
-    const{productdetail}=useContext(Datacontext)
+  const { categorydata } = useContext(Datacontext);
+  console.log(categorydata);
+
+  const { productdata } = useContext(Datacontext);
+  const { productdetail } = useContext(Datacontext);
   return (
     <div className="homepage">
       <div className="container">
@@ -116,82 +116,84 @@ function Home() {
           <Detail />
           <Detail />
         </div>
+        <div className="views">
+          <button className="view">View All Products</button>
+        </div>
       </div>
       <div className="container">
-      <div className="head">
-        <div className="red-tag">
-          <div className="box"></div>
-          <span>Categories</span>
+        <div className="head">
+          <div className="red-tag">
+            <div className="box"></div>
+            <span>Categories</span>
+          </div>
+          <div className="row">
+            <h2>Browse By Category</h2>
+            <div className="btns">
+              <button className="btn">←</button>
+              <button className="btn">→</button>
+            </div>
+          </div>
         </div>
-        <div className="row">
-          <h2>Browse By Category</h2>
-          <div className="btns">
-            <button className="btn">←</button>
-            <button className="btn">→</button>
+        <div className="list">
+          <div className="item">
+            <img src="public/imgs/Category-CellPhone(1).png" alt="" />
+            <span>Phones</span>
+          </div>
+          <div className="item">
+            <img src="public/imgs/Category-Computer(1).png" alt="" />
+            <span>Computers</span>
+          </div>
+          <div className="item">
+            <img src="public/imgs/Category-SmartWatch(1).png" alt="" />
+            <span>SmartWatch</span>
+          </div>
+          <div className="item active">
+            <img src="public/imgs/Category-Camera(1).png" alt="" />
+            <span>Camera</span>
+          </div>
+          <div className="item">
+            <img src="public/imgs/Category-CellPhone(1).png" alt="" />
+            <span>HeadPhones</span>
+          </div>
+          <div className="item">
+            <img src="public/imgs/Category-Gamepad(1).png" alt="" />
+            <span>Gaming</span>
           </div>
         </div>
       </div>
-      <div className="list">
-        <div className="item">
-          <i className="fa-solid fa-mobile-screen-button"></i>
-          <span>Phones</span>
+      <div className="section">
+        <div className="top-label">
+          <div className="red-box"></div>
+          <span>This Month</span>
         </div>
-        <div className="item">
-          <i className="fa-solid fa-desktop"></i>
-          <span>Computers</span>
+        <div className="header-row">
+          <h2>Best Selling Products</h2>
+          <button className="view-all">View All</button>
         </div>
-        <div className="item">
-          <i className="fa-solid fa-clock"></i>
-          <span>SmartWatch</span>
-        </div>
-        <div className="item active">
-          <i className="fa-solid fa-camera"></i>
-          <span>Camera</span>
-        </div>
-        <div className="item">
-          <i className="fa-solid fa-headphones"></i>
-          <span>HeadPhones</span>
-        </div>
-        <div className="item">
-          <i className="fa-solid fa-gamepad"></i>
-          <span>Gaming</span>
-        </div>
-      </div>
-
-    </div>
-    <div className="section">
-      <div className="top-label">
-        <div className="red-box"></div>
-        <span>This Month</span>
-      </div>
-      <div className="header-row">
-        <h2>Best Selling Products</h2>
-        <button className="view-all">View All</button>
-      </div>
         <div className="flexbox">
           <Detail />
           <Detail />
           <Detail />
           <Detail />
         </div>
-    </div>
-    <div className="container">
+      </div>
+      <div className="container">
         <div className="music">
-            <img src="public/imgs/Frame 600(1).png" alt="" />
-        </div>
-    </div>
-    <div className="section">
-      <div className="top-tag">
-        <div className="red-box"></div>
-        <span>Our Products</span>
-      </div>
-      <div className="main-row">
-        <h2>Explore Our Products</h2>
-        <div className="arrows-group">
-          <button className="arrow">←</button>
-          <button className="arrow">→</button>
+          <img src="public/imgs/Frame 600(1).png" alt="" />
         </div>
       </div>
+      <div className="section">
+        <div className="top-tag">
+          <div className="red-box"></div>
+          <span>Our Products</span>
+        </div>
+        <div className="main-row">
+          <h2>Explore Our Products</h2>
+          <div className="arrows-group">
+            <button className="arrow">←</button>
+            <button className="arrow">→</button>
+          </div>
+        </div>
         <div className="flexboxs">
           <Detail />
           <Detail />
@@ -202,65 +204,65 @@ function Home() {
           <Detail />
           <Detail />
         </div>
-    </div>
-    <div className="arrival-container">
-      <div className="tag">
-        <div className="red-box"></div>
-        <span>Featured</span>
       </div>
-      <h2 className="arrival-title">New Arrival</h2>
-      <div className="grid-layout">
-        <div className="grid-item ps5">
-          <img src="public/imgs/Frame 684.png" alt="PS5" />
+      <div className="arrival-container">
+        <div className="tag">
+          <div className="red-box"></div>
+          <span>Featured</span>
         </div>
-        <div className="grid-item womens">
-          <img src="public/imgs/Frame 685.png" alt="Women" />
-        </div>
-        <div className="grid-item speakers">
-          <img src="public/imgs/Frame 686.png" alt="Speakers" />
-        </div>
-        <div className="grid-item perfume">
-          <img src="public/imgs/Frame 687.png" alt="Perfume" />
-        </div>
-      </div>
-    </div>
-    <div className="services">
-      <div className="serv-item">
-        <div className="icon-circle">
-          <div className="black-circle">
-            <i className="fa-solid fa-truck-fast"></i>
+        <h2 className="arrival-title">New Arrival</h2>
+        <div className="grid-layout">
+          <div className="grid-item ps5">
+            <img src="public/imgs/Frame 684.png" alt="PS5" />
+          </div>
+          <div className="grid-item womens">
+            <img src="public/imgs/Frame 685.png" alt="Women" />
+          </div>
+          <div className="grid-item speakers">
+            <img src="public/imgs/Frame 686.png" alt="Speakers" />
+          </div>
+          <div className="grid-item perfume">
+            <img src="public/imgs/Frame 687.png" alt="Perfume" />
           </div>
         </div>
-        <div className="serv-text">
-          <h3>FREE AND FAST DELIVERY</h3>
-          <p>Free delivery for all orders over $140</p>
-        </div>
       </div>
+      <div className="services">
+        <div className="serv-item">
+          <div className="icon-circle">
+            <div className="black-circle">
+              <img src="public/imgs/Services(13).png" alt="" />
+            </div>
+          </div>
+          <div className="serv-text">
+            <h3>FREE AND FAST DELIVERY</h3>
+            <p>Free delivery for all orders over $140</p>
+          </div>
+        </div>
 
-      <div className="serv-item">
-        <div className="icon-circle">
-          <div className="black-circle">
-            <i className="fa-solid fa-headset"></i>
+        <div className="serv-item">
+          <div className="icon-circle">
+            <div className="black-circle">
+              <img src="public/imgs/Services(14).png" alt="" />
+            </div>
+          </div>
+          <div className="serv-text">
+            <h3>24/7 CUSTOMER SERVICE</h3>
+            <p>Friendly 24/7 customer support</p>
           </div>
         </div>
-        <div className="serv-text">
-          <h3>24/7 CUSTOMER SERVICE</h3>
-          <p>Friendly 24/7 customer support</p>
-        </div>
-      </div>
 
-      <div className="serv-item">
-        <div className="icon-circle">
-          <div className="black-circle">
-            <i class="fa-regular fa-circle-check"></i>
+        <div className="serv-item">
+          <div className="icon-circle">
+            <div className="black-circle">
+              <img src="public/imgs/Services(15).png" alt="" />
+            </div>
+          </div>
+          <div className="serv-text">
+            <h3>MONEY BACK GUARANTEE</h3>
+            <p>We return money within 30 days</p>
           </div>
         </div>
-        <div className="serv-text">
-          <h3>MONEY BACK GUARANTEE</h3>
-          <p>We return money within 30 days</p>
-        </div>
       </div>
-    </div>
     </div>
   );
 }

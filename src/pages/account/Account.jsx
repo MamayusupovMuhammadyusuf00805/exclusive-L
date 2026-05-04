@@ -5,7 +5,9 @@ function Account() {
   return (
     <div className="accountpage">
       <div className="container">
-        <p className="home">Home / My Account</p>
+     <p className="home">
+          <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>Home</a> / My Account
+        </p>
         <div className="account">
           <div className="leftaccount">
             <h3>Manage My Account</h3>

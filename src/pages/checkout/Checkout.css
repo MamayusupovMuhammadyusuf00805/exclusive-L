@@ -1,5 +1,5 @@
 .checkout {
-    padding: 40px 0 140px;
+    padding: 20px 0px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -196,4 +196,28 @@
 
 .order {
     width: 190px;
+}
+
+.path {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.path-link {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7; 
+    transition: 0.3s;
+}
+
+.path-link:hover {
+    opacity: 1;
+    color: #DB4444; 
+}
+
+.path span {
+    font-weight: 500;
+    opacity: 1;
 }

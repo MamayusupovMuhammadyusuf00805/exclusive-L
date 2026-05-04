@@ -23,13 +23,8 @@ function Navbar() {
             <li>
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"about"}>About</NavLink>
-              <NavLink to={"log"}>Log in</NavLink>
               <NavLink to={"sign"}>Sign</NavLink>
               <NavLink to={"contact"}>Contact</NavLink>
-              <NavLink to={"checkout"}>Checkout</NavLink>
-              <NavLink to={"product"}>Product</NavLink>
-              <NavLink to={"account"}>Account</NavLink>
-              <NavLink to={"mistake"}>Mistake</NavLink>
             </li>
           </ul>
           <form action="" className="gl">
@@ -43,10 +38,12 @@ function Navbar() {
               <Link to="/card" className="card-link">
                 <i class="fa-solid fa-cart-shopping"></i>
               </Link>
+              <i class="fa-regular fa-user"></i>
             </div>
           </form>
         </div>
       </div>
+      <hr />
     </div>
   );
 }

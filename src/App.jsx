@@ -43,7 +43,7 @@ function App() {
             <Route path="/sign" element={<Sign />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/checkout" element={<Checkout />} />
-            <Route path="/product/:id" element={<Product />} />
+            <Route path="/product" element={<Product />} />
             <Route path="/account" element={<Account />} />
             <Route path={"/wishlist"} element={<Wishlist />} />
             <Route path={"/card"} element={<Card />} />

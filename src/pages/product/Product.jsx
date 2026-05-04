@@ -4,7 +4,6 @@ import "./Product.css"
 function Product() {
   return (
     <div className='productpage'>
-        <p></p>
         <div className="container">
             <div className="product">
                 <div className="leftpro">

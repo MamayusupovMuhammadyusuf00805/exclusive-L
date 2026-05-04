@@ -5,21 +5,30 @@ function About() {
   return (
     <div className="aboutpage">
       <div className="container">
-        <p className="breadcrumb">Home / About</p>
+        <p className="breadcrumb">
+          <a
+            href="/"
+            style={{ textDecoration: "none", color: "inherit", opacity: "0.7" }}
+          >
+            Home
+          </a>
+          &nbsp;/&nbsp;
+          <span>About</span>
+        </p>
         <div className="about">
           <div className="rightabout">
             <h1>Our Story</h1>
             <p>
-              Launched in 2015, Exclusive is South Asia’s premier online shopping
-              marketplace with an active presence in Bangladesh. Supported by a
-              wide range of tailored marketing, data, and service solutions,
-              Exclusive has 10,500 sellers and 300 brands and serves 3 million
-              customers across the region.
+              Launched in 2015, Exclusive is South Asia’s premier online
+              shopping marketplace with an active presence in Bangladesh.
+              Supported by a wide range of tailored marketing, data, and service
+              solutions, Exclusive has 10,500 sellers and 300 brands and serves
+              3 million customers across the region.
             </p>
             <p>
               Exclusive has more than 1 million products to offer, growing at a
-              very fast pace. Exclusive offers a diverse assortment in categories
-              ranging from consumer electronics to lifestyle.
+              very fast pace. Exclusive offers a diverse assortment in
+              categories ranging from consumer electronics to lifestyle.
             </p>
           </div>
           <div className="leftabout">
@@ -81,21 +90,21 @@ function About() {
           </div>
         </div>
         <div className="free">
-            <div className="free1">
-                <img src="public/imgs/Services(10).png" alt="" />
-                <h1>FREE AND FAST DELIVERY</h1>
-                <p>Free delivery for all orders over $140</p>
-            </div>
-            <div className="free1">
-                <img src="public/imgs/Services(11).png" alt="" />
-                <h1>24/7 CUSTOMER SERVICE</h1>
-                <p>Friendly 24/7 customer support</p>
-            </div>
-            <div className="free1">
-                <img src="public/imgs/Services(12).png" alt="" />
-                <h1>MONEY BACK GUARANTEE</h1>
-                <p>We reеurn money within 30 days</p>
-            </div>
+          <div className="free1">
+            <img src="public/imgs/Services(10).png" alt="" />
+            <h1>FREE AND FAST DELIVERY</h1>
+            <p>Free delivery for all orders over $140</p>
+          </div>
+          <div className="free1">
+            <img src="public/imgs/Services(11).png" alt="" />
+            <h1>24/7 CUSTOMER SERVICE</h1>
+            <p>Friendly 24/7 customer support</p>
+          </div>
+          <div className="free1">
+            <img src="public/imgs/Services(12).png" alt="" />
+            <h1>MONEY BACK GUARANTEE</h1>
+            <p>We reеurn money within 30 days</p>
+          </div>
         </div>
       </div>
     </div>

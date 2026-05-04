@@ -156,3 +156,27 @@
     padding: 5px 0px;
 
 }
+
+.breadcrumb {
+    font-size: 14px;
+    color: #000;
+}
+
+
+.breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.5; 
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+    color: #DB4444; 
+}
+
+
+.breadcrumb span {
+    font-weight: 500;
+    opacity: 1;
+}

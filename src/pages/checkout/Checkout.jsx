@@ -6,7 +6,22 @@ function Checkout() {
     <div className="checkout">
       <div className="container">
         <p className="path">
-          Account / My Account / Product / View Cart / <span>CheckOut</span>
+          <a href="/account" className="path-link">
+            Account
+          </a>
+          /
+          <a href="/my-account" className="path-link">
+            My Account
+          </a>
+          /
+          <a href="/products" className="path-link">
+            Product
+          </a>
+          /
+          <a href="/card" className="path-link">
+            View Cart
+          </a>
+          /<span>CheckOut</span>
         </p>
 
         <h1 className="title">Billing Details</h1>
@@ -14,7 +29,9 @@ function Checkout() {
         <div className="main">
           <div className="leftp">
             <div className="items">
-              <label>First Name<span>*</span></label>
+              <label>
+                First Name<span>*</span>
+              </label>
               <input type="text" required />
             </div>
             <div className="items">
@@ -22,7 +39,9 @@ function Checkout() {
               <input type="text" />
             </div>
             <div className="items">
-              <label>Street Address<span>*</span></label>
+              <label>
+                Street Address<span>*</span>
+              </label>
               <input type="text" required />
             </div>
             <div className="items">
@@ -30,15 +49,21 @@ function Checkout() {
               <input type="text" />
             </div>
             <div className="items">
-              <label>Town/City<span>*</span></label>
+              <label>
+                Town/City<span>*</span>
+              </label>
               <input type="text" required />
             </div>
             <div className="items">
-              <label>Phone Number<span>*</span></label>
+              <label>
+                Phone Number<span>*</span>
+              </label>
               <input type="tel" required />
             </div>
             <div className="items">
-              <label>Email Address<span>*</span></label>
+              <label>
+                Email Address<span>*</span>
+              </label>
               <input type="email" required />
             </div>
 
@@ -90,7 +115,11 @@ function Checkout() {
                   <input type="radio" name="payment" id="bank" />
                   <label htmlFor="bank">Bank</label>
                 </div>
-                <img src="public/imgs/Frame 834.png" alt="Cards" className="bank-imgs" />
+                <img
+                  src="public/imgs/Frame 834.png"
+                  alt="Cards"
+                  className="bank-imgs"
+                />
               </div>
               <div className="radio">
                 <input type="radio" name="payment" id="cash" defaultChecked />
