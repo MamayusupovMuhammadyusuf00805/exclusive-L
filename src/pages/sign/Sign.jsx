@@ -68,7 +68,7 @@ function Sign() {
               <i
                 className={`fa-regular ${visible ? "fa-eye" : "fa-eye-slash"}`}
                 onClick={() => setVisible(!visible)}
-                style={{ cursor: "pointer", marginLeft: "10px" }}
+                style={{ cursor: "pointer", marginLeft: "55px" }}
               ></i>
               <hr />
 

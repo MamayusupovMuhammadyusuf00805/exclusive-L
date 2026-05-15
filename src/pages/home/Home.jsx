@@ -46,23 +46,23 @@ function Home() {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 1" />
+                <img src="/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 1" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="public/imgs/asdf.jpg" alt="Slide 2" />
+                <img src="/imgs/asdf.jpg" alt="Slide 2" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 3" />
+                <img src="/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 3" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="public/imgs/asdf.jpg" alt="Slide 4" />
+                <img src="/imgs/asdf.jpg" alt="Slide 4" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 5" />
+                <img src="/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 5" />
               </SwiperSlide>
             </Swiper>
           </div>
