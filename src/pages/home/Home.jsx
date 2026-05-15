@@ -230,16 +230,16 @@ function Home() {
         <h2 className="arrival-title">New Arrival</h2>
         <div className="grid-layout">
           <div className="grid-item ps5">
-            <img src="public/imgs/Frame 684.png" alt="PS5" />
+            <img src="/imgs/Frame 684.png" alt="PS5" />
           </div>
           <div className="grid-item womens">
-            <img src="public/imgs/Frame 685.png" alt="Women" />
+            <img src="/imgs/Frame 685.png" alt="Women" />
           </div>
           <div className="grid-item speakers">
-            <img src="public/imgs/Frame 686.png" alt="Speakers" />
+            <img src="/imgs/Frame 686.png" alt="Speakers" />
           </div>
           <div className="grid-item perfume">
-            <img src="public/imgs/Frame 687.png" alt="Perfume" />
+            <img src="/imgs/Frame 687.png" alt="Perfume" />
           </div>
         </div>
       </div>
@@ -247,7 +247,7 @@ function Home() {
         <div className="serv-item">
           <div className="icon-circle">
             <div className="black-circle">
-              <img src="public/imgs/Services(13).png" alt="" />
+              <img src="/imgs/Services(13).png" alt="" />
             </div>
           </div>
           <div className="serv-text">
@@ -259,7 +259,7 @@ function Home() {
         <div className="serv-item">
           <div className="icon-circle">
             <div className="black-circle">
-              <img src="public/imgs/Services(14).png" alt="" />
+              <img src="/imgs/Services(14).png" alt="" />
             </div>
           </div>
           <div className="serv-text">
@@ -271,7 +271,7 @@ function Home() {
         <div className="serv-item">
           <div className="icon-circle">
             <div className="black-circle">
-              <img src="public/imgs/Services(15).png" alt="" />
+              <img src="/imgs/Services(15).png" alt="" />
             </div>
           </div>
           <div className="serv-text">
