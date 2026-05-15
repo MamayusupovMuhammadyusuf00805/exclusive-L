@@ -40,7 +40,7 @@ function Footer() {
                     <h2>Download App</h2>
                     <p>Save $3 with App New User Only</p>
                     <div className="qr">
-                        <img src="public/imgs/Qr Code.png" alt="" />
+                        <img src="/imgs/Qr Code.png" alt="" />
                         <div className="btw">
                             <button><i class="fa-brands fa-google-play"></i>Get It On</button>
                             <button><i class="fa-brands fa-app-store-ios"></i>Download On The</button>
