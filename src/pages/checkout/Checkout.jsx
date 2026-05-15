@@ -1,27 +1,34 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Checkout.css";
 
 function Checkout() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const orderData = location.state;
+
+
+  if (!orderData) {
+    return (
+      <div style={{ textAlign: "center", padding: "100px" }}>
+        <h2>Buyurtma ma'lumotlari topilmadi</h2>
+        <button className="red-btn" onClick={() => navigate("/card")}>
+          Savatga qaytish
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="checkout">
       <div className="container">
         <p className="path">
-          <a href="/account" className="path-link">
-            Account
-          </a>
-          /
-          <a href="/my-account" className="path-link">
-            My Account
-          </a>
-          /
-          <a href="/products" className="path-link">
-            Product
-          </a>
-          /
-          <a href="/card" className="path-link">
-            View Cart
-          </a>
-          /<span>CheckOut</span>
+          <a href="/account" className="path-link">Account</a> /
+          <a href="/my-account" className="path-link">My Account</a> /
+          <a href="/products" className="path-link">Product</a> /
+          <a href="/card" className="path-link">View Cart</a> /
+          <span>CheckOut</span>
         </p>
 
         <h1 className="title">Billing Details</h1>
@@ -29,9 +36,7 @@ function Checkout() {
         <div className="main">
           <div className="leftp">
             <div className="items">
-              <label>
-                First Name<span>*</span>
-              </label>
+              <label>First Name<span>*</span></label>
               <input type="text" required />
             </div>
             <div className="items">
@@ -39,9 +44,7 @@ function Checkout() {
               <input type="text" />
             </div>
             <div className="items">
-              <label>
-                Street Address<span>*</span>
-              </label>
+              <label>Street Address<span>*</span></label>
               <input type="text" required />
             </div>
             <div className="items">
@@ -49,21 +52,15 @@ function Checkout() {
               <input type="text" />
             </div>
             <div className="items">
-              <label>
-                Town/City<span>*</span>
-              </label>
+              <label>Town/City<span>*</span></label>
               <input type="text" required />
             </div>
             <div className="items">
-              <label>
-                Phone Number<span>*</span>
-              </label>
+              <label>Phone Number<span>*</span></label>
               <input type="tel" required />
             </div>
             <div className="items">
-              <label>
-                Email Address<span>*</span>
-              </label>
+              <label>Email Address<span>*</span></label>
               <input type="email" required />
             </div>
 
@@ -78,24 +75,16 @@ function Checkout() {
             <div className="products">
               <div className="lines">
                 <div className="info">
-                  <img src="public/imgs/Gamepad-Cart-Small.png" alt="Gamepad" />
-                  <p>LCD Monitor</p>
+                  <img src={orderData.image} alt={orderData.name} style={{width: "50px", height: "50px", objectFit: "contain"}} />
+                  <p>{orderData.name}</p>
                 </div>
-                <p>$650</p>
-              </div>
-              <div className="lines">
-                <div className="info">
-                  <img src="public/imgs/Monitor-Cart-Small.png" alt="Monitor" />
-                  <p>H1 Gamepad</p>
-                </div>
-                <p>$1100</p>
+                <p>${orderData.price} x {orderData.selectedQuantity}</p>
               </div>
             </div>
-
             <div className="total">
               <div className="line">
                 <p>Subtotal:</p>
-                <p>$1750</p>
+                <p>${orderData.finalPrice}</p>
               </div>
               <hr />
               <div className="line">
@@ -105,7 +94,7 @@ function Checkout() {
               <hr />
               <div className="line bold">
                 <p>Total:</p>
-                <p>$1750</p>
+                <p>${orderData.finalPrice}</p>
               </div>
             </div>
 

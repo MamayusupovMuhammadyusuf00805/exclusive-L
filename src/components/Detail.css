@@ -54,7 +54,7 @@
 }
 
 .heart i {
-  background: #F5F5F5;
+ 
   padding: 12px;
   border-radius: 50%;
   cursor: pointer;
@@ -95,6 +95,8 @@
 .flexbox{
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 

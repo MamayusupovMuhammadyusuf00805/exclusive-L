@@ -1,40 +1,41 @@
 import React, { useContext } from "react";
 import "./Home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Detail from "../../components/Detail";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Pagination, Autoplay } from "swiper/modules";
-import Detail from "../../components/Detail";
+
 import { Datacontext } from "../../App";
 import Log from "../log/Log";
+import { baseUrl } from "../../services/App";
+import { Link } from "react-router-dom";
+
 
 function Home() {
   const { categorydata } = useContext(Datacontext);
   console.log(categorydata);
-
   const { productdata } = useContext(Datacontext);
-  const { productdetail } = useContext(Datacontext);
+  
+
+  const {datacategory}=useContext(Datacontext)
+  
   return (
     <div className="homepage">
       <div className="container">
         <div className="hero">
           <div className="lefthero">
-            <p>
-              Woman’s Fashion <i className="fa-solid fa-angle-right"></i>
-            </p>
-            <p>
-              Men’s Fashion <i className="fa-solid fa-angle-right"></i>
-            </p>
-            <p>Electronics</p>
-            <p>Home & Lifestyle</p>
-            <p>Medicine</p>
-            <p>Sports & Outdoor</p>
-            <p>Baby’s & Toys</p>
-            <p>Groceries & Pets</p>
-            <p>Health & Beauty</p>
+            {categorydata.map((item, index) => (
+              <div className="menu-item" key={index}>
+                <img src={item.image} alt={item.picture} />
+                <Link to={`/category/${item.id}`}>
+                          <p>{item.title}</p>
+                </Link>
+          
+              </div>
+            ))}
           </div>
 
           <div className="righthero">
@@ -45,23 +46,23 @@ function Home() {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img src="/imgs/Frame 560(2).png" alt="Slide 1" />
+                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 1" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="/imgs/Frame 560(2).png" alt="Slide 2" />
+                <img src="public/imgs/asdf.jpg" alt="Slide 2" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="/imgs/Frame 560(2).png" alt="Slide 3" />
+                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 3" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="/imgs/Frame 560(2).png" alt="Slide 4" />
+                <img src="public/imgs/asdf.jpg" alt="Slide 4" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="/imgs/Frame 560(2).png" alt="Slide 5" />
+                <img src="public/imgs/Gemini_Generated_Image_q4ndgcq4ndgcq4nd.png" alt="Slide 5" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -111,10 +112,16 @@ function Home() {
       </div>
       <div className="container">
         <div className="flexbox">
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
+          {productdata &&
+            productdata
+              .slice(12, 16)
+              .map((item, index) => (
+                <Detail
+                  key={item.id || index}
+                  product={item}
+                  baseUrl={baseUrl}
+                />
+              ))}
         </div>
         <div className="views">
           <button className="view">View All Products</button>
@@ -134,29 +141,30 @@ function Home() {
             </div>
           </div>
         </div>
+
         <div className="list">
           <div className="item">
-            <img src="public/imgs/Category-CellPhone(1).png" alt="" />
+            <img src="/imgs/Category-CellPhone(1).png" alt="" />
             <span>Phones</span>
           </div>
           <div className="item">
-            <img src="public/imgs/Category-Computer(1).png" alt="" />
+            <img src="/imgs/Category-Computer(1).png" alt="" />
             <span>Computers</span>
           </div>
           <div className="item">
-            <img src="public/imgs/Category-SmartWatch(1).png" alt="" />
+            <img src="/imgs/Category-SmartWatch(1).png" alt="" />
             <span>SmartWatch</span>
           </div>
           <div className="item active">
-            <img src="public/imgs/Category-Camera(1).png" alt="" />
+            <img src="/imgs/Category-Camera(1).png" alt="" />
             <span>Camera</span>
           </div>
           <div className="item">
-            <img src="public/imgs/Category-CellPhone(1).png" alt="" />
+            <img src="/imgs/Category-CellPhone(1).png" alt="" />
             <span>HeadPhones</span>
           </div>
           <div className="item">
-            <img src="public/imgs/Category-Gamepad(1).png" alt="" />
+            <img src="/imgs/Category-Gamepad(1).png" alt="" />
             <span>Gaming</span>
           </div>
         </div>
@@ -171,10 +179,16 @@ function Home() {
           <button className="view-all">View All</button>
         </div>
         <div className="flexbox">
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
+          {productdata &&
+            productdata
+              .slice(8, 12)
+              .map((item, index) => (
+                <Detail
+                  key={item.id || index}
+                  product={item}
+                  baseUrl={baseUrl}
+                />
+              ))}
         </div>
       </div>
       <div className="container">
@@ -194,15 +208,18 @@ function Home() {
             <button className="arrow">→</button>
           </div>
         </div>
+
         <div className="flexboxs">
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
-          <Detail />
+          {productdata &&
+            productdata
+              .slice(0, 8)
+              .map((item, index) => (
+                <Detail
+                  key={item.id || index}
+                  product={item}
+                  baseUrl={baseUrl}
+                />
+              ))}
         </div>
       </div>
       <div className="arrival-container">

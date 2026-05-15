@@ -20,11 +20,12 @@
 
 .bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 15px 0px;
     background-color: #000000;
 }
-.bar1{
+
+.bar1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,9 +40,10 @@
 
 
 
-.gl input{
-    background-color: #F5F5F5;
+.gl input {
+    background-color: #f8f9fa;
 }
+
 .bar1 i {
     color: #000000;
 }
@@ -52,7 +54,7 @@
 
 
 select {
-    color:white;
+    color: white;
     background-color: #000000;
     border: none;
 }
@@ -63,7 +65,25 @@ select {
     gap: 20px;
     list-style: none;
     padding: 20px;
-    
+
+}
+
+.lefthero .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+
+.lefthero .menu-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.lefthero .menu-item p {
+    margin: 0;
 }
 
 
@@ -105,15 +125,16 @@ select {
 
 .nav-links a.active::after {
     width: 100%;
-   
+
 }
 
-.gl{
+.gl {
     display: flex;
     align-items: center;
 
 }
-.glass{
+
+.glass {
     display: flex;
     gap: 20px;
 }
@@ -241,29 +262,20 @@ hr {
 }
 
 :root {
-    --nav-height: 140px; 
+    --nav-height: 140px;
 }
+
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #FFFFFF;
     z-index: 1000;
-    background: linear-gradient(
-        180deg, 
-        rgba(235, 248, 255, 0.8) 0%, 
-        rgba(235, 248, 255, 0.4) 100%
-    );
-    backdrop-filter: blur(15px) saturate(180%);
-    -webkit-backdrop-filter: blur(15px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.nav:hover {
-    background: rgba(235, 248, 255, 0.9);
-    box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.12);
-}
+
+
 
 
 
@@ -271,4 +283,50 @@ hr {
 
 body {
     padding-top: 150px;
+}
+
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 4px;
+    width: 220px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-dropdown a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.user-dropdown i {
+    color: white;
+}
+
+.user-dropdown a:hover {
+    color: #db4444;
+}
+
+.active-icon {
+    background-color: #db4444;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
 }
