@@ -11,16 +11,15 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { Datacontext } from "../../App";
 import Log from "../log/Log";
 import { baseUrl } from "../../services/App";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function Home() {
   const { categorydata } = useContext(Datacontext);
   console.log(categorydata);
   const { productdata } = useContext(Datacontext);
-  
-
-  const {datacategory}=useContext(Datacontext)
+  const {datacategory}=useContext(Datacontext);
+  const navigate = useNavigate();
   
   return (
     <div className="homepage">
@@ -124,7 +123,9 @@ function Home() {
               ))}
         </div>
         <div className="views">
-          <button className="view">View All Products</button>
+          <button className="view" onClick={() => navigate('/allproducts')}>
+        View All Products
+      </button>
         </div>
       </div>
       <div className="container">

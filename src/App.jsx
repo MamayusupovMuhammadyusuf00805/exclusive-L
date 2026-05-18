@@ -16,6 +16,7 @@ import Mistake from "./pages/mistake/Mistake";
 // Компонентлар ва саҳифалар импорти...
 import { categorydataFetch, productdataFunction, userInfoFetch } from "./services/App";
 import Category from './pages/category/Category';
+import Allproducts from './pages/allproducts/Allproducts';
 
 export const Datacontext = createContext();
 
@@ -59,6 +60,7 @@ function App() {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/card" element={<Card />} />
            <Route path="/category/:id" element={<Category />} />
+           <Route path='/allproducts' element={<Allproducts/>}/>
           <Route path="*" element={<Mistake />} />
         </Routes>
         <Footer />
